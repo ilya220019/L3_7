@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv1_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_item"
+        app:layout_constraintStart_toStartOf="@id/img_item"
+        android:text="aleksey"
+        android:textSize="10sp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv2_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv1_item"
+        app:layout_constraintStart_toStartOf="@id/tv1_item"
+        android:text="petrovich"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv3_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv1_item"
+        app:layout_constraintEnd_toEndOf="@id/img_item"
+        android:text="1"
+        android:textSize="20sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
